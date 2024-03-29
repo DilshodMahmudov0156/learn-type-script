@@ -197,15 +197,54 @@
 // // Tuples ----in this case you have to use only limeted datas!
 //
 // const array: [number, number, string] = [1, 2, "a"];
-function loggerTime(number) {
-    console.log(new Date());
-    return number;
-}
-;
-function loggerDate(number) {
-    console.log(new Date());
-    return number;
-}
-;
-loggerTime(5);
-loggerDate(5);
+//
+//
+// // Generics
+//
+// function loggerTime<T>(data: T): T {
+//     console.log(new Date());
+//     return data;
+// };
+//
+// loggerTime<number>(9);
+// loggerTime<string>("Dilshod");
+//
+// interface ICar {
+//     name: string;
+//     color: string;
+// };
+//
+// const car = {
+//     name: "Bmw",
+//     color: "black"
+// };
+//
+// const myCar = loggerTime<ICar>(car);
+//
+//
+//
+//
+//
+//  Generics
+// class Car<T>{
+//     data: T;
+// }
+//
+// const a = new Car<number>();
+//
+//
+//
+//
+
+// Generics --- connecting extended data
+//
+// interface ICar {
+//     name: string;
+// }
+//
+// function logger<T extends ICar>(data: T): T {
+//     return data.name;
+// }
+//
+// logger<string>();
+
